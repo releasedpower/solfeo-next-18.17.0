@@ -1,0 +1,79 @@
+{
+  "name": "@solfeo/app",
+  "version": "0.8.1",
+  "private": true,
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "4.2.1",
+    "@types/bun": "1.0.12",
+    "@types/fluent-ffmpeg": "2.1.24",
+    "@types/jest": "29.5.12",
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "20.12.5",
+    "@types/prettier": "3.0.0",
+    "@types/react": "18.2.74",
+    "@types/resize-observer-browser": "0.1.11",
+    "@types/webmidi": "2.0.10",
+    "autoprefixer": "10.4.19",
+    "eslint": "8.56.0",
+    "eslint-config-next": "14.1.4",
+    "fluent-ffmpeg": "2.1.2",
+    "jsdom": "24.0.0",
+    "postcss": "8.4.38",
+    "prettier": "3.2.5",
+    "prettier-plugin-tailwindcss": "0.5.13",
+    "sharp": "0.33.3",
+    "skia-canvas": "1.0.1",
+    "swr": "2.2.5",
+    "tailwindcss": "3.4.3",
+    "ts-node": "10.9.2",
+    "tsconfig-paths": "4.2.0",
+    "typescript": "5.4.4"
+  },
+  "dependencies": {
+    "@radix-ui/react-slider": "1.1.2",
+    "@radix-ui/react-tooltip": "1.0.7",
+    "@tonejs/midi": "2.0.28",
+    "axios": "^1.7.2",
+    "bcryptjs": "^2.4.3",
+    "clsx": "2.1.0",
+    "crypto-js": "^4.2.0",
+    "jotai": "2.7.2",
+    "jotai-effect": "1.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "next": "^14.1.4",
+    "nodemailer": "^6.9.14",
+    "pg": "^8.12.0",
+    "react": "18.2.0",
+    "react-cookie": "^7.1.4",
+    "react-dom": "18.2.0",
+    "react-feather": "2.0.10",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.2.1",
+    "sequelize": "^6.37.3",
+    "tailwind-merge": "2.2.2"
+  },
+  "scripts": {
+    "start": "next start",
+    "dev": "next dev",
+    "build": "next build",
+    "lint": "next lint",
+    "format": "prettier --write **/*.{ts,tsx}",
+    "gen": "cd scripts && ts-node generate.ts && cd ..",
+    "render": "RENDER=1 ts-node --project scripts/tsconfig.json scripts/render.ts --huge-max-old-generation-size",
+    "test": "bun test",
+    "test:watch": "bun test --watch"
+  },
+  "browserslist": {
+    "production": [
+      ">1%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
