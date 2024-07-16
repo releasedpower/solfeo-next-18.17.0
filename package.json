@@ -54,8 +54,8 @@
     "tailwind-merge": "2.2.2"
   },
   "scripts": {
-    "start": "next start",
-    "dev": "next dev",
+    "start": "next start -p 3020",
+    "dev": "next dev -p 3020",
     "build": "next build",
     "lint": "next lint",
     "format": "prettier --write **/*.{ts,tsx}",
